@@ -51,9 +51,9 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-gem 'pg',group :: production 
+gem 'pg',group: :production 
 
-gem 'sqlite3',group :: development
+gem 'sqlite3',group:  :development
 gem 'rails_12factor'
 
 
