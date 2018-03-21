@@ -140,7 +140,7 @@
           placeId: place.place_id,
           location: place.geometry.location
         });
-          infowindow.setContent(place.name+'<br>'+place.place_id +'<br>'+place.formatted_address+'<br>'+'<%= link_to "learn more", pics_path %>');
+          infowindow.setContent(place.name+'<br>'+place.place_id +'<br>'+place.formatted_address+'<br>'+'<%= link_to "GET DETAILS", pics_path %>');
         marker.setVisible(true);
        infowindow.open(map, marker);
       });
