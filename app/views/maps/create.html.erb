@@ -25,24 +25,22 @@
 	</head>
 	<body class="landing">
 
-			<header id="header" class="skel-layers-fixed">
-			<h1><a href="index.html"><strong>TRANSPARENT INDIA</strong></a></h1>	
+			<header id="header" class="skel-layers-fixed" style="background-color: #e0555a; color:rgb(209, 242, 245)" >
+			<h1><%= link_to "TRASPARENT INIDIA", root_path %></h1>	
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li>
-							<a href="" class="icon fa-angle-down">Links</a>
-							<ul>
-								<li><a href="https://rtionline.gov.in/">RTI</a></li>
-								<li><a href="http://digitalindia.gov.in/">DIGITAL INDIA</a></li>
-							</ul>
-						</li>
-						<li><a href="About.html">About</a></li>
+						<li><%= link_to "Home", root_path %></li>
+						<% if user_signed_in? %>
+							<li><%= link_to "Settings", edit_user_registration_path%></li>
+							<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete%></li> 
+						<%else%>
+							<li><%= link_to "Join", new_user_registration_path%></li>
+							<li><%= link_to "Log In", new_user_session_path%></li> 
+						 <% end %>
 					</ul>
 				</nav>
 			</header>
-
-
+			
 		<!-- Three -->
 		<br>
 		<br>
@@ -65,11 +63,7 @@
 					<br>	
 					<div class="row">
 						<div class="4u 6u(2) 12u$(3)">
-							<article class="box post">
-								<!-- <a href="#" class="image fit"><img src="images/Harsha.jpg" alt="" /></a> -->
-
-
-								
+							<article class="box post">								
 								<h3>Harshavardhan G</h3>
 								<p>Whatsapp me on <b>9404237451</b><br>Mail me at <b>manask322@gmail.com</b></p>
 								<ul class="actions">
@@ -114,7 +108,7 @@
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<span class="copyright">
-					&copy; Copyright. All rights reserved. Design by <a href="http://www.html5webtemplates.co.uk">Code buste</a>
+					&copy; Copyright. All rights reserved. Design by <a href="http://www.html5webtemplates.co.uk">Code busters</a>
 				</span>
 			</footer>
 
