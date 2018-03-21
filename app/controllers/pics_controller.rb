@@ -27,8 +27,8 @@ def index
   end
 
   def update
-    if @doc.update(doc_params)
-      redirect_to @doc
+    if @pic.update(doc_params)
+      redirect_to @pic
     else
       render 'edit'
     end

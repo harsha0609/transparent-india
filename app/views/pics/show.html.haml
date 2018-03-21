@@ -1,9 +1,0 @@
-%h1.title= @pic.title
-%h2.domain=@pic.domain
-%p= simple_format(@pic.content)
-
-
-.buttons
-= link_to "Edit", edit_pic_path(@pic), class: "button" 
-= link_to "Trash It", pic_path(@pic), method: :delete, data: {confirm: "Are you sure?"},class: "button"
-
