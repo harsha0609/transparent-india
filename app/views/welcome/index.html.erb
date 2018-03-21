@@ -32,7 +32,7 @@
 					<ul>
 						<li><a href="https://rtionline.gov.in/" target="_blank">RTI</a></li>
 						<li><a href="http://digitalindia.gov.in/" target="_blank">DIGITAL INDIA</a></li>
-						<li><%= link_to "About", maps_index_path %></li>
+						<li><%= link_to "About", maps_create_path %></li>
 						<% if user_signed_in? %>
 							<li><%= link_to "Settings", edit_user_registration_path%></li>
 							<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete%></li> 
@@ -49,14 +49,14 @@
 					<h2>Transparent India</h2>
 					<p>Making India a better place</p>
 					<ul class="actions">
-						<li><%= link_to "Learn More", {controller: "maps", action: "index"},class: "button big scrolly" %></li>
+						<li><%= link_to "Learn More", {controller: "maps", action: "new"},class: "button big scrolly" %></li>
 					</ul>
 				</div>
 			</section>
 			<section id="cta" class="wrapper style3">
 				<h2>Ready to explore</h2>
 				<ul class="actions">
-					<li><%= link_to "Get Started", {controller: "maps", action: "new"},class: "button big" %></li>
+					<li><%= link_to "Get Started", {controller: "maps", action: "index"},class: "button big" %></li>
 				</ul>
 			</section>
 			

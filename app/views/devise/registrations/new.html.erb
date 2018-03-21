@@ -1,3 +1,6 @@
+
+<%= render "devise/shared/links" %>
+
 <div style="display:flex;flex-direction:column;align-items:center">
 <style>
 #fieldname{
@@ -28,7 +31,7 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <div class="actions" style="text-align:center;>
+  <div class="actions" style="text-align:center">
     <%= f.submit "Sign up" %>
   </div>
 <% end %>

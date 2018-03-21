@@ -1,0 +1,8 @@
+-unless @pics.blank?
+	-@pics.each do |pic|
+		%a{ href: (url_for [pic])}
+			%p.title= link_to pic.title, pic
+			%p.date= time_ago_in_words(pic.created_at)
+			%p.domain= truncate(pic.domain, length:50)
+-else
+	%button= link_to "Create Doc",new_pic_path

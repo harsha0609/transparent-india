@@ -1,0 +1,25 @@
+<div style="display:flex;flex-direction:column;align-items:center">
+<style>
+#fieldname{
+  text-align:center;
+  margin:30px 20 -30px 20;
+}
+</style>
+
+<%=simple_form_for @pic do |f|%>
+	<div class="field">
+		<%=f.input :title,id:'fieldname'%>
+	</div>
+	<div class="field">
+		<%=f.input :domain,id:'fieldname'%>
+	</div>
+	<div class="field">
+		<%=f.input :content,id:'fieldname'%>
+	</div>
+	<br>
+	<br>
+	<div class="actions" style="text-align:center">
+	<%=f.submit "submit"%>
+	</div>
+<%end%>
+</div>	
