@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE HTML>
 
 <html>
@@ -56,18 +55,3 @@
 <div class="buttons"></div>
 <%= link_to "Edit", edit_pic_path(@pic), class: "button"  %>
 <%= link_to "Trash It", pic_path(@pic), method: :delete, data: {confirm: "Are you sure?"},class: "button" %>
-=======
-<h1>@pic.title</h1>
-<h2>@pic.domain </h2>
-<p>@pic.content</p>
-
-<!-- %h1.title= @pic.title
-%h2.domain=@pic.domain
-%p= simple_format(@pic.content) -->
-
-
-<div class= "buttons">
-<%= link_to "Edit", edit_pic_path(@pic), class: "button" %>
-<%= link_to "Trash It", pic_path(@pic), method: :delete, data: {confirm: "Are you sure?"},class: "button"%>
-</div>
->>>>>>> 0dd5e877b761572d965aaa4b6e6030ccecf32f35
