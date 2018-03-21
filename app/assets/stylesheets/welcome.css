@@ -690,6 +690,7 @@
 		}
 
 		.box.post {
+			background-image: url(Harsha.png);
 			margin-left: auto;
 			margin-right: auto;
 			text-align: center;
@@ -764,6 +765,8 @@
 			}
 
 		.image.fit {
+			background-image: url(Read-more.png);
+			opacity: .90;
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;

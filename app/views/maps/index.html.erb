@@ -110,7 +110,7 @@
           placeId: place.place_id,
           location: place.geometry.location
         });
-          infowindow.setContent(place.name+'<br>'+place.place_id +'<br>'+place.formatted_address+'<br>'+'<a href="https://www.google.co.in/" target="_blank" >' + "Google" + '</a>' );
+          infowindow.setContent(place.name+'<br>'+place.place_id +'<br>'+place.formatted_address+'<br>'+'<%= link_to "learn more", pics_path %>');
         marker.setVisible(true);
        infowindow.open(map, marker);
       });
